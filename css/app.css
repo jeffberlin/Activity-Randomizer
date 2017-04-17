@@ -30,17 +30,10 @@ input {
 	border: none;
 	margin-left: 3px;
 	background-color: #DCDCDC;
+	vertical-align: middle;
 }
 
 input:active {
   	box-shadow: 0 .75px #808080;
   	transform: translateY(1px);
-}
-
-/* RESPONSIVE */
-
-@media only screen and (max-width: 330px) {
-	span {
-		font-size: 12pt;
-	}
 }
