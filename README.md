@@ -7,4 +7,7 @@ Randomly selects activities for you to do!
 * Navigate to 'File', 'Open', and then select the `picker.html` file
 * Start finding your activities to do!
 
+## Or, try it live!
+https://jeffberlin.github.io/Activity-Randomizer/picker.html
+
 ### Built using Foundation and JavaScript.
