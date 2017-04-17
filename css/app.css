@@ -1,3 +1,7 @@
+*, body {
+	text-align: center;
+}
+
 html {
 	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
@@ -17,7 +21,6 @@ h3 {
 
 .callout p {
 	text-indent: 30px;
-	text-align: center;
 }
 
 input {
@@ -25,10 +28,19 @@ input {
 	cursor: pointer;
 	outline: none;
 	border: none;
-	border-radius: 15px;
+	margin-left: 3px;
+	background-color: #DCDCDC;
 }
 
 input:active {
   	box-shadow: 0 .75px #808080;
   	transform: translateY(1px);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 330px) {
+	span {
+		font-size: 12pt;
+	}
 }
