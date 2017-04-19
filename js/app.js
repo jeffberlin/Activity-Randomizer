@@ -204,7 +204,6 @@ var activitiesArray = [
 		'Astronomy',
 		'Gambling',
 		'Cigars',
-		'Smoking',
 		'Collecting',
 		'Educational Courses',
 		'Yard Sales',
