@@ -58,13 +58,13 @@ var activitiesArray = [
 		'Drag Racing',
 		'Drifting',
 		'Rally Racing',
-		'Motorcycles',
+		'Ride Motorcycles',
 		'Dirtbikes',
 		'ATVs',
 		'Off Road & 4x4',
 		'Circuit Racing',
 		'Auto Cross',
-		'Go Karts',
+		'Race Go Karts',
 		'Automotive Meet',
 		'Motorcycle Meet',
 		'Work on cars',
@@ -255,5 +255,23 @@ var activitiesArray = [
 function randomActivity() {
 	var random = activitiesArray[Math.floor(Math.random() * activitiesArray.length)]
 	document.getElementById("activity").innerHTML=random;
+}
+
+// Flickr pictures
+
+var key = '91a39f1666dd2f372e92cf06637f223f';
+var secret = '1a0ebcb486b61537';
+var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.getRecent' + '&api_key=' + key + '&per_page=10&format=json' + '&nojsoncallback=1';
+
+function showFlickr() {
+
+	$.ajax({
+		url: url,
+		dataType: 'json',
+		data: {
+
+		}
+	})
+	document.getElementById("flickrImages").innerHTML = showFlickr();
 }
 
