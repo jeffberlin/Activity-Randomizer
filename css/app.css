@@ -37,3 +37,7 @@ input:active {
   	box-shadow: 0 .75px #808080;
   	transform: translateY(1px);
 }
+
+#images {
+	height: 200px;
+}

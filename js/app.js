@@ -1,3 +1,5 @@
+// Code by Jeff Berlin
+
 $(document).foundation()
 
 var activitiesArray = [
@@ -229,8 +231,6 @@ var activitiesArray = [
 		'Sports Gaming',
 		'Strategy Gaming',
 		'Simulation Gaming',
-		'Online Roleplaying Games', 
-		'Live Action Roleplaying Games',
 		'Backgammon',
 		'Dominoes',
 		'Card Games',
@@ -250,30 +250,11 @@ var activitiesArray = [
 ];
 
 function randomActivity() {
+
 	var random = activitiesArray[Math.floor(Math.random() * activitiesArray.length)]
+
 	document.getElementById("activity").innerHTML = random;
+
 }
 
-// Flickr pictures
 
-// var key = '91a39f1666dd2f372e92cf06637f223f';
-// var secret = '1a0ebcb486b61537';
-// var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search' + '&api_key=' + key + '&per_page=10&format=json' + '&nojsoncallback=1';
-
-function showFlickr(json) {
-
-	$.each(json.items, function(i, item) {
-		$("<img />").attr("src", item.media.m).appendTo("#images");
-	});
-
-	var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=' + random + '&format=json';
-
-	$.ajax({
-		url: url,
-		dataType: 'jsonp',
-		data: {
-			"tags": random,
-			"format": "json"
-		}
-	});
-}
