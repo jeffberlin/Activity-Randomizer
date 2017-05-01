@@ -38,3 +38,10 @@ input:active {
 #images {
 	height: 200px;
 }
+
+#map {
+	position: absolute;
+	height: 350px;
+	margin-top: 20px;
+	width: 1200px;
+}

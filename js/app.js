@@ -257,4 +257,23 @@ function randomActivity() {
 
 }
 
+var map;
+var markers = [];
+var bounds;
+
+function initMap() {
+
+	bounds = new google.maps.LatLngBounds();
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: {
+			lat: 34.2257,
+			lng: -77.9447
+		},
+		zoom: 11
+	});
+}
+window.initMap = initMap;
+
+
+
 
