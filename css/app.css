@@ -23,11 +23,12 @@ input {
 	letter-spacing: .4px;
 	cursor: pointer;
 	outline: none;
-	border: none;
+	border: 1px solid #aad6f4;
 	margin-left: 3px;
-	background-color: #DCDCDC;
+	background-color: #d7ecfa;
 	vertical-align: middle;
 	height: 35px;
+	width: 80px;
 }
 
 input:active {
@@ -36,12 +37,12 @@ input:active {
 }
 
 #images {
-	height: 200px;
+	height: 170px;
 }
 
 #map {
 	position: absolute;
-	height: 350px;
+	height: 345px;
 	margin-top: 20px;
 	width: 1200px;
 }

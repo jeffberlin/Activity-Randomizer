@@ -8,6 +8,8 @@
     <title>Activity Picker</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script rel="text/javascript" src="js/activities.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <!-- <script type="text/javascript">
 
@@ -46,7 +48,7 @@
     <div class="row">
 
       <div class="medium-6 medium-centered columns" style="padding-bottom: 20px; margin-top: 60px;">
-        <span>Click here to get an activity to try: </span>
+        <span>Click here to get your activity: </span>
         <input type="button" value="Activity" onclick="randomActivity()" style="border-radius: 3px;">
       </div>
 
@@ -56,11 +58,11 @@
     <div class="row">
 
       <div class="large-6 medium-6 medium-centered columns">
-        <h5>Don't be lazy or boring! Go out and try:</h5>
+        <h5>Go out and try:</h5>
 
-          <div class="medium-7 medium-centered columns" style="padding-bottom: 10px; padding-top: 10px;">
+          <div class="medium-8 medium-centered columns" style="padding-top: 10px;">
             <div class="primary callout">
-              <h5 id="activity"></h5>
+              <h4 id="activity"></h4>
             </div>
           </div>
 
@@ -68,7 +70,7 @@
 
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
 
         <div class="small-3 columns">
           <img src="images/drag.jpg">          
@@ -86,11 +88,15 @@
           <img src="images/bball.jpeg">
         </div>
 
+    </div> -->
+
+    <div class="medium-4 medium-centered columns" style="padding-top: 10px;">
+      <h3>Here are places nearby for your activity!</h3>
     </div>
 
     <div class="row">
 
-      <div class="medium-10 medium-centered columns" id="map"></div>
+      <div class="medium-10 medium-centered columns" id="map" style="margin-bottom: 8px;"></div>
 
     </div>
 
@@ -100,7 +106,7 @@
     <script src="js/app.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyBBm40aIp8sWMP6uQviU7sUejki2GXiwVc&v=3&callback=window.initMap"></script>
   </body>
 </html>
