@@ -62,7 +62,7 @@ var activitiesArray = [
 		'Off Road & 4x4',
 		'Circuit Racing',
 		'Autocross',
-		'Race Go Karts',
+		'Go Karts',
 		'Automotive Meet',
 		'Motorcycle Meet',
 		'Work on cars',

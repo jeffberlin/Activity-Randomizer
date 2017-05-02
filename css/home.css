@@ -1,0 +1,29 @@
+*, body {
+	text-align: center;
+}
+
+h1 {
+	color: #696972;
+	font-size: 28pt;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	font-size: 16pt;
+	color: #00AAFE;
+}
+
+li span {
+	cursor: pointer;
+}
+
+li span:active {
+	color: lightgrey;
+}

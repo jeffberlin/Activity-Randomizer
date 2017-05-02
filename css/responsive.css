@@ -1,6 +1,18 @@
-@media only screen and (max-width: 378px) {
+@media only screen and (max-width: 1025px) {
 	#map {
-		height: 240px;
+		left: 15px;
+		height: 340px;
+		width: 994px;
+	}
+}
+
+@media only screen and (max-width: 376px) {
+	h1 {
+		padding-top: 10px;
+	}
+
+	#map {
+		height: 220px;
 		width: 355px;
 		left: 10px;
 	}
